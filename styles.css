@@ -1,18 +1,37 @@
- body {
-      background-color: rgb(135, 206, 235);
-    }
+body {
+    background-color: rgb(135, 206, 235);
+}
+
 body.cl p:first-child {
-      background-color: black;
-      color: white;
-  }
-body.cl p:last-child{
-	color:red
+    background-color: black;
+    color: white;
 }
-body.cl p:nth-child{
-	color:black
+
+body.cl p:last-child {
+    color: red;
 }
-li{
-	background-color:gray;
-	width:50%;
-	padding:10px;
+
+body.cl p:nth-child(2) {
+    color: black;
+}
+
+li {
+    width: 50%;
+    padding: 10px;
+}
+
+li:nth-child(odd) {
+    background-color: white;
+}
+
+li:nth-child(even) {
+    background-color: gray;
+}
+
+li:first-child, li:last-child {
+    font-size: 22px;
+}
+
+li:nth-last-child(3) {
+    background-color: pink;
 }
